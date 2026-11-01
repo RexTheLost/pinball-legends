@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pinball Legends Downloads</title>
+<meta name="description" content="Download the newest Pinball Legends: Arcade Arena build for Windows.">
+<style>
+  :root {
+    --bg: #0b0814; --panel: #171028; --edge: #6a3bd1; --text: #f1ecff; --muted: #b2a6d6;
+    --pink: #ff3fb4; --cyan: #3fe6ff; --gold: #ffd34a;
+  }
+  @media (prefers-color-scheme: light) {
+    :root { --bg: #f5f1ff; --panel: #ffffff; --edge: #7a4fe0; --text: #1c1430; --muted: #5d5280;
+            --pink: #c4157f; --cyan: #0b84a0; --gold: #8a6400; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.55 system-ui, "Segoe UI", sans-serif; }
+  main { max-width: 860px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: clamp(2rem, 7vw, 3rem); margin: 0; letter-spacing: 0.04em; color: var(--gold);
+       text-shadow: 0 0 18px color-mix(in srgb, var(--pink) 60%, transparent); }
+  .sub { margin: 2px 0 6px; color: var(--cyan); font-weight: 700; letter-spacing: 0.2em; }
+  .tag { color: var(--muted); margin: 0 0 24px; }
+  .version { color: var(--pink); font-weight: bold; }
+  img { width: 100%; height: auto; border-radius: 10px; border: 2px solid var(--edge); display: block; }
+  .shots { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; margin-bottom: 26px; }
+  .card { background: var(--panel); border: 2px solid var(--edge); border-radius: 12px; padding: 20px; }
+  .card h2 { margin: 0 0 6px; }
+  .card p { margin: 0 0 14px; color: var(--muted); }
+  a.button { display: inline-block; background: linear-gradient(90deg, var(--pink), var(--edge)); color: #fff; text-decoration: none;
+             font-weight: 800; padding: 12px 18px; border-radius: 8px; letter-spacing: 0.04em; }
+  a.button:hover { filter: brightness(1.12); }
+  section { margin-top: 32px; }
+  h3 { margin: 0 0 8px; color: var(--cyan); }
+  table { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
+  td, th { text-align: left; padding: 6px 8px; border-bottom: 1px solid color-mix(in srgb, var(--edge) 40%, transparent); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; }
+  .scroll { overflow-x: auto; }
+  ul { padding-left: 20px; }
+  footer { margin-top: 40px; color: var(--muted); font-size: 0.85rem; }
+  a { color: var(--cyan); }
+</style>
+</head>
+<body>
+<main>
+  <h1>PINBALL LEGENDS</h1>
+  <p class="sub">ARCADE ARENA</p>
+  <p class="tag">3D physics pinball where your ball is a gladiator. Newest build: <span class="version" id="version">v0.1</span> (early prototype)</p>
+
+  <div class="shots">
+    <img src="screenshot.png" alt="Playfield with flippers raised, the ball among green slime enemies">
+    <img src="cabinet.png" alt="The pinball cabinet standing in a neon arcade room">
+  </div>
+
+  <div class="card">
+    <h2>Windows (64-bit)</h2>
+    <p>Unzip and run <b>PinballLegends.exe</b>. No install. Keyboard or controller.</p>
+    <a class="button" href="https://github.com/RexTheLost/pinball-legends/releases/latest/download/PinballLegends-pc.zip">Download for Windows</a>
+  </div>
+
+  <section>
+    <h3>In this build</h3>
+    <ul>
+      <li>A full 3D cabinet in a neon arcade: flippers, plunger, pop bumpers, slingshots, rollover lanes, and a plastic ramp with a wire return.</li>
+      <li><b>Enemies</b> roam the playfield in waves: Slimes, Imps and Golems. Hit them hard to kill them for points, XP and coins.</li>
+      <li><b>Striker class</b>: stronger flippers and harder hits. Ability <b>Power Slam</b> supercharges your flippers and doubles damage for 6 seconds.</li>
+      <li>Controller support with analog plunger and rumble. Local high scores.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>Controls</h3>
+    <div class="scroll">
+    <table>
+      <tr><th></th><th>Keyboard</th><th>Controller</th></tr>
+      <tr><td>Left flipper</td><td>Z, Left Shift, Left</td><td>LB, LT</td></tr>
+      <tr><td>Right flipper</td><td>/, Right Shift, Right</td><td>RB, RT</td></tr>
+      <tr><td>Plunger</td><td>Hold Space or Down</td><td>Hold A, or pull a stick down and let go</td></tr>
+      <tr><td>Ability</td><td>E, Up</td><td>X</td></tr>
+      <tr><td>Camera</td><td>C</td><td>Y</td></tr>
+      <tr><td>New game</td><td>Enter</td><td>Start</td></tr>
+    </table>
+    </div>
+  </section>
+
+  <footer>All releases: <a href="https://github.com/RexTheLost/pinball-legends/releases">github.com/RexTheLost/pinball-legends/releases</a></footer>
+</main>
+</body>
+</html>
