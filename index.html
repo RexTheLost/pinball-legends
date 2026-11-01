@@ -24,6 +24,7 @@
   .version { color: var(--pink); font-weight: bold; }
   img { width: 100%; height: auto; border-radius: 10px; border: 2px solid var(--edge); display: block; }
   .shots { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; margin-bottom: 26px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
   .card { background: var(--panel); border: 2px solid var(--edge); border-radius: 12px; padding: 20px; }
   .card h2 { margin: 0 0 6px; }
   .card p { margin: 0 0 14px; color: var(--muted); }
@@ -45,22 +46,36 @@
 <main>
   <h1>PINBALL LEGENDS</h1>
   <p class="sub">ARCADE ARENA</p>
-  <p class="tag">3D physics pinball where your ball is a gladiator. Newest build: <span class="version" id="version">v0.1</span> (early prototype)</p>
+  <p class="tag">3D physics pinball where your ball is a gladiator. Newest build: <span class="version" id="version">v0.3</span> (early prototype)</p>
 
   <div class="shots">
-    <img src="screenshot.png" alt="Playfield with flippers raised, the ball among green slime enemies">
-    <img src="cabinet.png" alt="The pinball cabinet standing in a neon arcade room">
+    <img src="screenshot.png" alt="The town playfield with two ramps, bumpers and targets">
+    <img src="cabinet.png" alt="A boss fight in the dungeon layer under the town">
   </div>
 
-  <div class="card">
-    <h2>Windows (64-bit)</h2>
-    <p>Unzip and run <b>PinballLegends.exe</b>. No install. Keyboard or controller.</p>
-    <a class="button" href="https://github.com/RexTheLost/pinball-legends/releases/latest/download/PinballLegends-pc.zip">Download for Windows</a>
+  <div class="cards">
+    <div class="card">
+      <h2>Windows (64-bit)</h2>
+      <p>Unzip and run <b>PinballLegends.exe</b>. No install. Keyboard or controller.</p>
+      <a class="button" href="https://github.com/RexTheLost/pinball-legends/releases/latest/download/PinballLegends-pc.zip">Download for Windows</a>
+    </div>
+    <div class="card">
+      <h2>Meta Quest (VR)</h2>
+      <p>Sideload the APK (Developer Mode + SideQuest or <code>adb install</code>). Stand at the cabinet and play with the controller buttons.</p>
+      <a class="button" href="https://github.com/RexTheLost/pinball-legends/releases/latest/download/PinballLegends-VR-quest.apk">Download for Quest</a>
+    </div>
   </div>
 
   <section>
     <h3>In this build</h3>
     <ul>
+      <li><b>Two layers:</b> score enough on the town playfield and a sinkhole opens. Drop into the dungeon below, clear 3 waves, beat the boss and smash open its chest for class gear, XP and gold, then pop back up to town.</li>
+      <li><b>Five classes</b> (Striker, Guardian, Trickster, Alchemist, Gunslinger), each with a passive and four abilities.</li>
+      <li><b>Prize counter:</b> every game earns tickets to trade for weapons, armor and ball skins. Gold upgrades your gear.</li>
+      <li><b>Quest VR</b> and an in-game update notice when a new build is out.</li>
+      <li><b>Full table:</b> two ramps, drop targets, standups, a spinner and outlanes.</li>
+      <li><b>Sound and music</b>, sparks and screen shake, ball trails, flipper skins and table themes.</li>
+      <li><b>Daily and weekly challenges</b> for extra tickets and gold.</li>
       <li>A full 3D cabinet in a neon arcade: flippers, plunger, pop bumpers, slingshots, rollover lanes, and a plastic ramp with a wire return.</li>
       <li><b>Enemies</b> roam the playfield in waves: Slimes, Imps and Golems. Hit them hard to kill them for points, XP and coins.</li>
       <li><b>Striker class</b>: stronger flippers and harder hits. Ability <b>Power Slam</b> supercharges your flippers and doubles damage for 6 seconds.</li>
@@ -76,10 +91,11 @@
       <tr><td>Left flipper</td><td>Z, Left Shift, Left</td><td>LB, LT</td></tr>
       <tr><td>Right flipper</td><td>/, Right Shift, Right</td><td>RB, RT</td></tr>
       <tr><td>Plunger</td><td>Hold Space or Down</td><td>Hold A, or pull a stick down and let go</td></tr>
-      <tr><td>Ability</td><td>E, Up</td><td>X</td></tr>
+      <tr><td>Abilities 1-4</td><td>1 2 3 4 (or Q W E R)</td><td>D-pad up, right, down, left</td></tr>
       <tr><td>Camera</td><td>C</td><td>Y</td></tr>
-      <tr><td>New game</td><td>Enter</td><td>Start</td></tr>
+      <tr><td>Pause</td><td>Esc</td><td>Start</td></tr>
     </table>
+    <p class="tag" style="margin-top:12px">Quest: grips or triggers flip, A (or right stick down) pulls the plunger, left stick up/right/down/left fires abilities, B pauses, Y recentres.</p>
     </div>
   </section>
 
